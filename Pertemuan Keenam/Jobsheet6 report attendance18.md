@@ -131,13 +131,7 @@ public class LogicalOperatorWifiAttendance18 {
 #### 2.2.2 Hasil Running / Screenshot Output
 
 Sample run (Test 1):
-
-```
-Is the user a student? (true/false): true
-Is the user a lecturer? (true/false): false
-Is the account currently blocked? (true/false): false
-WiFi access granted
-```
+![Output Percobaan 1](images/percobaan2-output.png)
 
 #### 2.2.3 Tabel Pengujian Parameter Output
 
