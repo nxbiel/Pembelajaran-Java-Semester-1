@@ -131,6 +131,7 @@ public class LogicalOperatorWifiAttendance18 {
 #### 2.2.2 Hasil Running / Screenshot Output
 
 Sample run (Test 1):
+
 ![Output Percobaan 1](images/percobaan2-output.png)
 
 #### 2.2.3 Tabel Pengujian Parameter Output
