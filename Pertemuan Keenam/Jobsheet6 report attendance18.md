@@ -132,7 +132,7 @@ public class LogicalOperatorWifiAttendance18 {
 
 Sample run (Test 1):
 
-![Output Percobaan 1](images/percobaan2-output.png)
+![Output Percobaan 2](images/percobaan2-output.png)
 
 #### 2.2.3 Tabel Pengujian Parameter Output
 
