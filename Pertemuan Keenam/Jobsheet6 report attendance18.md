@@ -201,13 +201,7 @@ public class NestedLabAccessAttendance18 {
 
 Sample run (access denied at the second level):
 
-```
-Is the student active? (true/false): true
-Is the student sanctioned? (true/false): false
-Does the student have lecturer permission? (true/false): false
-Is the student a lab assistant? (true/false): false
-Access denied: lecturer permission or lab assistant status required
-```
+![Output Percobaan 3](images/percobaan3-output.png)
 
 #### 2.3.3 Tabel Pengujian Parameter Output
 
