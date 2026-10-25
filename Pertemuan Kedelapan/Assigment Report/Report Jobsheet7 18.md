@@ -127,7 +127,7 @@ public class SiakadForModified18 {
     }
 }
     Output :
-![Output 2.1.4 Result](images/2.1.4.png)
+![Output 2.1.4 Result](../images/2.1.4.png)
 
 ---
 
@@ -184,7 +184,7 @@ public class SiakadWhile18 {
 
 The result matches the figure in the jobsheet.
 
-![Output Experiment 2](images/2.2.1.png)
+![Output Experiment 2](../images/2.2.1.png)
 
 #### 2.2.3 Answers to Questions
 
@@ -230,7 +230,7 @@ Enter score for student 5: 55
 The grade of student 5 is C
 ```
 
-![Output Experiment 2 Modified](images/2.2.1.png)
+![Output Experiment 2 Modified](../images/2.2.1.png)
 
 ---
 
@@ -296,7 +296,7 @@ All transactions completed.
 
 Rena pays 3 × 12,000 + 0 × 7,000 + 1 × 20,000 = Rp 56,000. Yuni pays 1 × 12,000 + 4 × 7,000 + 2 × 20,000 = Rp 80,000. Both match the figure in the jobsheet.
 
-![Output Experiment 3](images/231.png)
+![Output Experiment 3](../images/231.png)
 
 #### 2.3.3 Answers to Questions
 
@@ -419,8 +419,8 @@ Total ticket sales: Rp 1442500
 
 The values 4 and 10 test the boundaries: 4 tickets earn no discount and 10 tickets earn 10%.
 
-![Output Task 1](images/3.1.png)
-![Output Task 1](images/3.1_2.png)
+![Output Task 1](../images/3.1.png)
+![Output Task 1](../images/3.1_2.png)
 
 ### 3.2 Code Implementation of Task 2: Parking Fees (Flowchart)
 
@@ -489,7 +489,7 @@ Total parking fees: Rp 25000
 
 Car, 3 hours: 3 × 3,000 = 9,000. Motorcycle, 5 hours: 5 × 2,000 = 10,000. Car, 2 hours: 2 × 3,000 = 6,000. The sum is Rp 25,000. The invalid type `7` was rejected and did not change the total.
 
-![Output Task 2](images/3.2.png)
+![Output Task 2](../images/3.2.png)
 
 ---
 
