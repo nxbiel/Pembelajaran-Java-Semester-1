@@ -125,8 +125,8 @@ Program yang meminta input memakai `Scanner`, jadi ketik jawabanmu di terminal s
 
 ## Aturan Penamaan
 
-- Nama file sama dengan nama `public class` di dalamnya. `Star18.java` berisi `public class Star18`.
-- Akhiran `18` adalah nomor presensi penulis. Program di Pertemuan 3 memakai akhiran `Nabil`.
+- Nama file sama dengan nama `public class` di dalamnya. `NamaKelas.java` berisi `public class NamaKelas`.
+- Akhiran di belakang nama kelas menandai pekerjaan penulis.
 
 ## Catatan Akademik
 
