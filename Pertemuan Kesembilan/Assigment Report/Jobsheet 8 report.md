@@ -407,7 +407,7 @@ public class Task218 {
 
 ### Output (n = 4)
 
-![Task218 output](../3.2%20Assigment%202/Task218.java)
+![Task218 output](../img/task218.png)
 
 
 ### Explanation
