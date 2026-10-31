@@ -1,29 +1,29 @@
 <div align="center">
 
-# ☕ Pembelajaran Java: Semester 1
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:ED8B00,100:1F6FEB&height=180&section=header&text=Pembelajaran%20Java&fontColor=ffffff&fontSize=44&fontAlignY=38&desc=Semester%201%20%C2%B7%20Polinema%20TI-1I&descAlignY=58" alt="Pembelajaran Java Semester 1" />
 
-**Dari `Hello World` sampai nested loop dalam 9 pertemuan.**
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1200&color=ED8B00&center=true&vCenter=true&width=520&height=40&lines=Hello+World;Variabel+dan+operator;if+%2F+else+%2F+switch;for%2C+while%2C+do-while;Nested+loop" alt="Topik yang dipelajari" />
 
-![Java](https://img.shields.io/badge/Java-21%2B-ED8B00?logo=openjdk&logoColor=white)
-![VS Code](https://img.shields.io/badge/Editor-VS%20Code-007ACC?logo=visualstudiocode&logoColor=white)
-![Kampus](https://img.shields.io/badge/Polinema-TI--1I-1F6FEB)
-![Pertemuan](https://img.shields.io/badge/Pertemuan-9-2EA043)
+![Java](https://img.shields.io/badge/Java-21%2B-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![VS Code](https://img.shields.io/badge/Editor-VS%20Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
+![Pertemuan](https://img.shields.io/github/directory-file-count/nxbiel/Pembelajaran-Java-Semester-1?type=dir&label=Pertemuan&style=flat-square&color=2EA043)
+![Commit bulan ini](https://img.shields.io/github/commit-activity/m/nxbiel/Pembelajaran-Java-Semester-1?label=Commit%20bulan%20ini&style=flat-square&color=8957E5)
+![Last commit](https://img.shields.io/github/last-commit/nxbiel/Pembelajaran-Java-Semester-1?style=flat-square&color=0969DA)
+![Repo size](https://img.shields.io/github/repo-size/nxbiel/Pembelajaran-Java-Semester-1?style=flat-square&color=1F6FEB)
+
+**Dari `Hello World` sampai nested loop, satu folder per pertemuan.**
+
+[Hasil](#lihat-hasilnya) · [Peta belajar](#peta-belajar) · [Jalankan](#jalankan-sendiri) · [Semua program Java](https://github.com/search?q=repo%3Anxbiel%2FPembelajaran-Java-Semester-1+language%3AJava&type=code)
 
 </div>
 
 ---
 
-## Isi Repo
-
-| 42 | 4 | 19 | 9 |
-| :---: | :---: | :---: | :---: |
-| program Java | laporan praktikum | tangkapan layar | pertemuan |
-
-Semua kode lahir di kelas Dasar Pemrograman, Politeknik Negeri Malang, bersama Pak Imam. Tiap pertemuan punya jobsheet, percobaan, dan tugas. Pertemuan Keenam, Kedelapan, dan Kesembilan punya laporan lengkap dengan kode, hasil, dan analisis.
+Kode ini lahir di kelas Dasar Pemrograman, Politeknik Negeri Malang, bersama Pak Imam. Tiap pertemuan punya jobsheet, percobaan, dan tugas. Pertemuan 6, 8, dan 9 punya laporan lengkap dengan kode, hasil, dan analisis.
 
 ## Lihat Hasilnya
 
-Pertemuan Kesembilan menggambar pola dengan nested loop. `Triangle18` menerima angka `n`, lalu mencetak segitiga naik dan turun. Input `5` menghasilkan ini:
+`Triangle18` dari Pertemuan 9 menerima angka `n`, lalu mencetak segitiga naik dan turun. Input `5` menghasilkan ini:
 
 ```
 Enter the value of n = 5
@@ -38,8 +38,6 @@ Enter the value of n = 5
 **
 *
 ```
-
-Tangkapan layar dari terminal saat program berjalan:
 
 <div align="center">
 
@@ -60,95 +58,48 @@ Tangkapan layar dari terminal saat program berjalan:
 
 | # | Topik | Yang dibuat |
 | :---: | --- | --- |
-| 1 | 👋 [Program pertama](Pertemuan%20Pertama) | `Latihan00` dan `MyFirstJava18` mencetak teks ke layar |
-| 2 | 📦 [Variabel, tipe data, operator](Pertemuan%20Kedua) | Tugas 2.1 sampai 2.5, termasuk luas segitiga dan hitungan tabungan bank |
-| 3 | ➕ [Operator dan perhitungan](Pertemuan%20Ketiga) | Luas persegi panjang, total pembayaran, total gaji, cicilan bulanan, biaya BBM |
-| 4 | 📝 [Quiz](Pertemuan%20Keempat/Quiz) | `QuizWeek4` menghitung konsumsi BBM motor di jalan kota, jalan raya, dan jalan pegunungan |
-| 5 | 🔀 [Seleksi: `if`, `if-else`, `switch`](Pertemuan%20Kelima) | Cetak KRS, validasi SKS, mesin antrean akademik, tarif parkir |
-| 6 | 🧩 [Nested `if` dan operator logika](Pertemuan%20Keenam) | Syarat ujian skripsi, absensi WiFi, akses lab, diskon toko buku. Laporan dalam [Indonesia](Pertemuan%20Keenam/Jobsheet6_report_attendance18_ID.md) dan [Inggris](Pertemuan%20Keenam/Jobsheet6_report_attendance18_EN.md) |
-| 7 | 🎬 [Ujian tengah semester](Pertemuan%20Ke%20Tujuh) | `CinemaGo` untuk harga tiket bioskop dan proyek Arduino buzzer |
-| 8 | 🔁 [Perulangan 1: `for`, `while`, `do-while`](Pertemuan%20Kedelapan) | Nilai mahasiswa SIAKAD, pesanan kafe, tiket bioskop, biaya parkir. [Laporan](Pertemuan%20Kedelapan/Assigment%20Report/Report%20Jobsheet7%2018.md) |
-| 9 | 🪆 [Perulangan 2: nested loop](Pertemuan%20Kesembilan) | Bintang, persegi panjang, segitiga, nilai kelompok, 3 tugas. [Laporan](Pertemuan%20Kesembilan/Assigment%20Report/Jobsheet%208%20report.md) |
+| 1 | 👋 [Program pertama](Pertemuan%20Pertama) | Cetak teks ke layar |
+| 2 | 📦 [Variabel, tipe data, operator](Pertemuan%20Kedua) | Luas segitiga, hitungan tabungan bank |
+| 3 | ➕ [Operator dan perhitungan](Pertemuan%20Ketiga) | Total gaji, cicilan bulanan, biaya BBM |
+| 4 | 📝 [Quiz](Pertemuan%20Keempat) | Konsumsi BBM motor di tiga jenis jalan |
+| 5 | 🔀 [Seleksi: `if`, `if-else`, `switch`](Pertemuan%20Kelima) | Cetak KRS, validasi SKS, tarif parkir |
+| 6 | 🧩 [Nested `if` dan operator logika](Pertemuan%20Keenam) | Absensi WiFi, akses lab, diskon toko buku |
+| 7 | 🎬 [Ujian tengah semester](Pertemuan%20Ke%20Tujuh) | Harga tiket bioskop, proyek Arduino buzzer |
+| 8 | 🔁 [Perulangan 1: `for`, `while`, `do-while`](Pertemuan%20Kedelapan) | Nilai SIAKAD, pesanan kafe, biaya parkir |
+| 9 | 🪆 [Perulangan 2: nested loop](Pertemuan%20Kesembilan) | Bintang, persegi panjang, segitiga |
 
-Nomor jobsheet berbeda dari nomor pertemuan. Jobsheet 7 jatuh di Pertemuan 8, dan Jobsheet 8 di Pertemuan 9.
+> [!TIP]
+> Folder baru langsung tampil di daftar file GitHub dan menaikkan badge **Pertemuan** di atas. Tabel ini butuh satu baris tambahan untuk tiap pertemuan baru.
 
-## Konsep yang Muncul di Kode
+**Laporan lengkap:** [Pertemuan 6 (Indonesia)](Pertemuan%20Keenam/Jobsheet6_report_attendance18_ID.md) · [Pertemuan 6 (Inggris)](Pertemuan%20Keenam/Jobsheet6_report_attendance18_EN.md) · [Pertemuan 8](Pertemuan%20Kedelapan/Assigment%20Report/Report%20Jobsheet7%2018.md) · [Pertemuan 9](Pertemuan%20Kesembilan/Assigment%20Report/Jobsheet%208%20report.md)
 
-- [x] Variabel dan tipe data
-- [x] Operator aritmetika, relasional, dan logika (`&&`, `||`, `!`)
-- [x] Input keyboard dengan `Scanner`
-- [x] Seleksi dengan `if`, `if-else`, dan `switch`
-- [x] Nested `if`
-- [x] Perulangan `for`, `while`, dan `do-while`
-- [x] Nested loop
+> [!NOTE]
+> Nomor jobsheet berbeda dari nomor pertemuan. Jobsheet 7 jatuh di Pertemuan 8, dan Jobsheet 8 di Pertemuan 9.
 
 ## Jalankan Sendiri
 
-Kamu butuh JDK 21 atau lebih baru. JDK 25 adalah versi LTS terbaru. Cek instalasi:
+Kamu butuh JDK 21 atau lebih baru. Satu file `.java` jalan langsung tanpa compile terpisah:
 
 ```bash
 java -version
-javac -version
-```
-
-<details>
-<summary><b>Compile lalu jalankan</b></summary>
-
-```bash
 cd "Pertemuan Kesembilan/2.1 Experiment 1"
-javac Star18.java
-java Star18
-```
-
-</details>
-
-<details>
-<summary><b>Jalankan langsung dari source</b></summary>
-
-JDK 11 ke atas menjalankan satu file `.java` tanpa langkah compile terpisah dan tanpa file `.class`:
-
-```bash
 java Star18.java
 ```
 
-</details>
-
-<details>
-<summary><b>Pakai VS Code</b></summary>
-
-Pasang Extension Pack for Java, buka folder repo, lalu klik **Run** di atas method `main`.
-
-</details>
-
-Hampir semua program meminta input lewat `Scanner`, jadi ketik jawabanmu di terminal setelah program mulai.
-
-## Struktur Folder
-
-```
-Pembelajaran-Java-Semester-1/
-├── Pertemuan Pertama/
-├── Pertemuan Kedua/          # Tugas 2.1 - 2.5
-├── Pertemuan Ketiga/         # percobaan 2.1 - 2.4 + Final Assignment
-├── Pertemuan Keempat/Quiz/
-├── Pertemuan Kelima/         # percobaan 2.1 - 2.3 + Tugas 1 - 3
-├── Pertemuan Keenam/         # percobaan, Task, laporan, images
-├── Pertemuan Ke Tujuh/       # Mid Exam
-├── Pertemuan Kedelapan/      # percobaan, Assigment, laporan, images
-└── Pertemuan Kesembilan/     # Experiment 1 - 4, Assigment 1 - 3, laporan, img
-```
-
-Setiap percobaan atau tugas punya subfolder sendiri dengan satu file `.java`. Folder `images` dan `img` menyimpan tangkapan layar untuk laporan.
+Di VS Code, pasang Extension Pack for Java, buka folder repo, lalu klik **Run** di atas method `main`. Hampir semua program meminta input lewat `Scanner`, jadi ketik jawabanmu di terminal setelah program mulai.
 
 ## Aturan Penamaan
 
 - Nama file sama dengan nama `public class` di dalamnya. `Star18.java` berisi `public class Star18`.
-- Akhiran `18` di banyak nama kelas adalah nomor presensi penulis.
-- Program di Pertemuan Ketiga memakai akhiran `Nabil`.
+- Akhiran `18` adalah nomor presensi penulis. Program di Pertemuan 3 memakai akhiran `Nabil`.
 
-## Catatan Akademik
+> [!IMPORTANT]
+> Repo ini menyimpan pekerjaan belajar pribadi. Baca sebagai referensi, kerjakan tugasmu sendiri, dan ikuti aturan dosen pengampu.
 
-Repo ini menyimpan pekerjaan belajar pribadi. Baca sebagai referensi, kerjakan tugasmu sendiri, dan ikuti aturan dosen pengampu.
-
-## Penulis
+<div align="center">
 
 **M. Syailendra Nabil Destama** · [@nxbiel](https://github.com/nxbiel)
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:ED8B00,100:1F6FEB&height=100&section=footer" alt="" />
+
+</div>
