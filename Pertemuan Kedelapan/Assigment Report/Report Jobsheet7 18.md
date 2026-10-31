@@ -489,7 +489,7 @@ Total parking fees: Rp 25000
 
 Car, 3 hours: 3 × 3,000 = 9,000. Motorcycle, 5 hours: 5 × 2,000 = 10,000. Car, 2 hours: 2 × 3,000 = 6,000. The sum is Rp 25,000. The invalid type `7` was rejected and did not change the total.
 
-![Output Task 2](../images/3.2.png)
+![Output Task 2](../images/3.2.png)vvf
 
 ---
 
