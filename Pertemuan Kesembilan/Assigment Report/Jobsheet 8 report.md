@@ -217,21 +217,7 @@ public class Triangle18 {
 
 ### Output (n = 5)
 
-```
-Enter the value of n = 5
-*
-**
-***
-****
-*****
-*****
-****
-***
-**
-*
-```
-
-![Triangle18 output](img/triangle18-output.png)
+![Triangle18 output](../img/triangle18.png)
 
 ### Answers
 
