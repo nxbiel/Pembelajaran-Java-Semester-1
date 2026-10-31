@@ -30,8 +30,7 @@ Repo ini menyimpan kode Java dari kelas Dasar Pemrograman semester 1 di Politekn
 | | |
 | --- | --- |
 | **Mata kuliah** | Dasar Pemrograman |
-| **Kampus** | Politeknik Negeri Malang, kelas TI-1I |
-| **Dosen** | Pak Imam |
+| **Kampus** | Politeknik Negeri Malang |
 | **Bahasa** | Java 21 atau lebih baru |
 | **Editor** | VS Code |
 
