@@ -137,7 +137,7 @@ Comparison: the first output is wide, the second is tall and narrow, and the thi
 
 5. The change is in the `print` statement: replace `"*"` with `"#"`. After the change, the output becomes a rectangle made of `#` characters, as shown below.
 
-   ![Rectangle18 output using #]
+   ![Rectangle18 output using #](../img/rectangle18_hash.png)
 
    After that, commit and push the change to the repository:
 
