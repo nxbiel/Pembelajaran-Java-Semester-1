@@ -42,7 +42,23 @@ Loop choice in this jobsheet:
 
 ### Code
 
-Program utama dapat dilihat di [Star18.java](../2.1%20Experiment%201/Star18.java).
+```java
+import java.util.Scanner;
+
+public class Star18 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the value of n = ");
+        int n = sc.nextInt();
+
+        for (int i = 1; i <= n; i++) {
+            System.out.print("*");
+        }
+        System.out.println();
+        sc.close();
+    }
+}
+```
 
 ### Output
 
@@ -76,7 +92,29 @@ Program utama dapat dilihat di [Star18.java](../2.1%20Experiment%201/Star18.java
 
 ### Code
 
-Program utama dapat dilihat di [Rectangle18.java](../2.2%20Experiment%202/Rectangle18.java).
+The code below prints `#`, which is the modification asked for in Question 5. The original version uses `"*"` in the same place.
+
+```java
+import java.util.Scanner;
+
+public class Rectangle18 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number of rows: ");
+        int rows = sc.nextInt();
+        System.out.print("Enter the number of columns: ");
+        int columns = sc.nextInt();
+
+        for (int i = 1; i <= rows; i++) {
+            for (int j = 1; j <= columns; j++) {
+                System.out.print("#");
+            }
+            System.out.println();
+        }
+        sc.close();
+    }
+}
+```
 
 ### Output
 
@@ -139,7 +177,42 @@ The starter code starts at `i = 0`, never calls `println`, and runs the outer lo
 
 ### Final code (triangle and inverted triangle)
 
-Program utama dapat dilihat di [Triangle18.java](../2.3%20Experiment%203/Triangle18.java).
+```java
+import java.util.Scanner;
+
+public class Triangle18 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the value of n = ");
+        int n = sc.nextInt();
+
+        // Triangle: rows 1..n
+        int i = 1;
+        while (i <= n) {
+            int j = 0;
+            while (j < i) {
+                System.out.print("*");
+                j++;
+            }
+            System.out.println();
+            i++;
+        }
+
+        // Inverted triangle: rows n..1
+        i = n;
+        while (i >= 1) {
+            int j = 0;
+            while (j < i) {
+                System.out.print("*");
+                j++;
+            }
+            System.out.println();
+            i--;
+        }
+        sc.close();
+    }
+}
+```
 
 ### Output (n = 5)
 
@@ -167,7 +240,60 @@ Program utama dapat dilihat di [Triangle18.java](../2.3%20Experiment%203/Triangl
 
 ### Code
 
-Program utama dapat dilihat di [GroupScore18.java](../2.4%20Experiment%204/GroupScore18.java).
+```java
+import java.util.Scanner;
+
+public class GroupScore18 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number of groups : ");
+        int numGroups = sc.nextInt();
+        System.out.print("Enter the number of graders: ");
+        int numGraders = sc.nextInt();
+
+        if (numGroups <= 0 || numGraders <= 0) {
+            System.out.println("Groups and graders must be > 0.");
+        } else {
+            int groupNo = 1;
+            double highestAverage = -1;
+            int bestGroup = 0;
+
+            while (groupNo <= numGroups) {
+                System.out.println("Group " + groupNo);
+                double totalScore = 0;
+
+                for (int j = 1; j <= numGraders; j++) {
+                    int score;
+                    do {
+                        System.out.print("  Score from Grader " + j + ": ");
+                        score = sc.nextInt();
+                        if (score < 0 || score > 100) {
+                            System.out.println("  Score must be 0-100. Retry!");
+                        }
+                    } while (score < 0 || score > 100);
+                    totalScore += score;
+                }
+
+                double averageScore = totalScore / numGraders;
+                System.out.println("Group " + groupNo
+                        + ": average score = " + averageScore);
+
+                if (averageScore > highestAverage) {
+                    highestAverage = averageScore;
+                    bestGroup = groupNo;
+                }
+
+                groupNo++;
+            }
+
+            System.out.println("==============================");
+            System.out.println("Best group         : " + bestGroup);
+            System.out.println("Highest average    : " + highestAverage);
+        }
+        sc.close();
+    }
+}
+```
 
 ### Output (3 groups, 2 graders, with the invalid score 105)
 
@@ -200,7 +326,37 @@ Invalid group count (groups = 0):
 
 ### Code
 
-Program utama dapat dilihat di [Task118.java](../3.1%20Assigment%201/Task118.java).
+```java
+import java.util.Scanner;
+
+public class Task118 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the value of n = ");
+        int n = sc.nextInt();
+
+        if (n < 1) {
+            System.out.println("n must be at least 1.");
+        } else {
+            int totalPrinted = 0;
+
+            for (int i = 1; i <= n; i++) {
+                for (int j = 1; j <= i; j++) {
+                    System.out.print(j);
+                    if (j < i) {
+                        System.out.print(" ");
+                    }
+                    totalPrinted++;
+                }
+                System.out.println();
+            }
+
+            System.out.println("Total numbers printed: " + totalPrinted);
+        }
+        sc.close();
+    }
+}
+```
 
 ### Output (n = 5)
 
@@ -218,7 +374,35 @@ The outer loop selects the row `i`. The inner loop prints the numbers 1 to `i` i
 
 ### Code
 
-Program utama dapat dilihat di [Task218.java](../3.2%20Assigment%202/Task218.java).
+```java
+import java.util.Scanner;
+
+public class Task218 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the value of n = ");
+        int n = sc.nextInt();
+
+        if (n < 3) {
+            System.out.println("n must be at least 3.");
+        } else {
+            int total = 0;
+
+            for (int row = 1; row <= n; row++) {
+                for (int col = 1; col <= n; col++) {
+                    int result = row * col;
+                    System.out.printf("%4d", result);
+                    total += result;
+                }
+                System.out.println();
+            }
+
+            System.out.println("Total of all numbers: " + total);
+        }
+        sc.close();
+    }
+}
+```
 
 ### Output (n = 4)
 
@@ -236,7 +420,71 @@ Each cell holds `row * col`. The format `%4d` prints every number right-aligned 
 
 ### Code
 
-Program utama dapat dilihat di [Task318.java](../3.3%20Assigment%203/Task318.java).
+```java
+import java.util.Scanner;
+
+public class Task318 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int numStores;
+        do {
+            System.out.print("Enter the number of stores: ");
+            numStores = sc.nextInt();
+            if (numStores < 1) {
+                System.out.println("The number of stores must be at least 1. Retry!");
+            }
+        } while (numStores < 1);
+
+        int totalAllItems = 0;
+        int maxItems = -1;      // -1 so a store with 0 items can still be recorded
+        int bestStore = 0;
+        String summary = "";
+
+        for (int store = 1; store <= numStores; store++) {
+            System.out.println("Store " + store);
+
+            int numCustomers;
+            do {
+                System.out.print("  Number of customers: ");
+                numCustomers = sc.nextInt();
+                if (numCustomers < 0) {
+                    System.out.println("  Must not be negative. Retry!");
+                }
+            } while (numCustomers < 0);
+
+            int storeItems = 0;
+            for (int c = 1; c <= numCustomers; c++) {
+                int items;
+                do {
+                    System.out.print("    Items bought by customer " + c + ": ");
+                    items = sc.nextInt();
+                    if (items < 0) {
+                        System.out.println("    Must not be negative. Retry!");
+                    }
+                } while (items < 0);
+                storeItems += items;
+            }
+
+            summary += "Store " + store + " - customers: " + numCustomers
+                    + ", total items: " + storeItems + "\n";
+            totalAllItems += storeItems;
+
+            // strict ">" keeps the smallest store number when there is a tie
+            if (storeItems > maxItems) {
+                maxItems = storeItems;
+                bestStore = store;
+            }
+        }
+
+        System.out.println();
+        System.out.print(summary);
+        System.out.println("Total items across all stores: " + totalAllItems);
+        System.out.println("Store with the most items: " + bestStore);
+        sc.close();
+    }
+}
+```
 
 ### Output (example from the jobsheet)
 
