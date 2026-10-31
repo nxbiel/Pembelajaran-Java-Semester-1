@@ -62,7 +62,7 @@ public class Star18 {
 
 ### Output
 
-![Star18 output](../img/star18.png)
+![Star18 output](../img/star18.png3)
 
 ### Answers
 
@@ -118,34 +118,10 @@ public class Rectangle18 {
 
 ### Output
 
-rows = 3, columns = 6 (with `*`):
+![Rectangle18 output](../img/rectangle18.png)
 
-```
-Enter the number of rows: 3
-Enter the number of columns: 6
-******
-******
-******
-```
-
-rows = 4, columns = 2:
-
-```
-**
-**
-**
-**
-```
-
-rows = 1, columns = 5:
-
-```
-*****
-```
 
 Comparison: the first output is wide, the second is tall and narrow, and the third is a single line. The number of rows sets the height and the number of columns sets the width.
-
-![Rectangle18 output](img/rectangle18-output.png)
 
 ### Answers
 
