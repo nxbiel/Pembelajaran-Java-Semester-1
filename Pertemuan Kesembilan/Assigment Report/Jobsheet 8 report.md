@@ -490,23 +490,7 @@ public class Task318 {
 
 ### Output (example from the jobsheet)
 
-```
-Enter the number of stores: 2
-Store 1
-  Number of customers: 2
-    Items bought by customer 1: 3
-    Items bought by customer 2: 2
-Store 2
-  Number of customers: 3
-    Items bought by customer 1: 1
-    Items bought by customer 2: 4
-    Items bought by customer 3: 2
-
-Store 1 - customers: 2, total items: 5
-Store 2 - customers: 3, total items: 7
-Total items across all stores: 12
-Store with the most items: 2
-```
+![Task318 output](../img/task318.png)
 
 ### Edge case tests
 
@@ -519,8 +503,6 @@ Store with the most items: 2
 ### Explanation
 
 The outer FOR loop visits each store. The inner FOR loop visits each customer of that store and adds the items to `storeItems`. Because `storeItems` belongs to one store, it is declared inside the outer loop and starts at 0 for every store. The variables `totalAllItems`, `maxItems`, and `bestStore` sit before the outer loop because they carry results across stores. The program stores no individual data, only running totals. The comparison `storeItems > maxItems` uses a strict `>`, so the first store with the highest value stays the winner on ties. Starting `maxItems` at -1 lets a store with 0 items still become the best store when every store has 0 items.
-
-![Task318 output](img/task318-output.png)
 
 ---
 
