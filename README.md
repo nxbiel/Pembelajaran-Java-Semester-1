@@ -17,7 +17,7 @@
 
 <br>
 
-[Tentang](#tentang) · [Isi repo](#isi-repo) · [Mulai cepat](#mulai-cepat) · [Penamaan](#aturan-penamaan) · [Semua program Java](https://github.com/search?q=repo%3Anxbiel%2FPembelajaran-Java-Semester-1+language%3AJava&type=code)
+[Tentang](#tentang) · [Sorotan](#sorotan) · [Jalankan](#jalankan-sendiri) · [Penamaan](#aturan-penamaan) · [Semua program Java](https://github.com/search?q=repo%3Anxbiel%2FPembelajaran-Java-Semester-1+language%3AJava&type=code)
 
 </div>
 
@@ -38,58 +38,90 @@ Repo ini menyimpan kode Java dari kelas Dasar Pemrograman semester 1 di Politekn
 > [!NOTE]
 > Nomor jobsheet berbeda dari nomor pertemuan. Jobsheet 7 jatuh di Pertemuan 8, dan Jobsheet 8 di Pertemuan 9.
 
-## Isi Repo
+## Sorotan
 
 <table>
 <tr>
-<td width="33%" valign="top">
+<td width="50%" valign="top">
 
-**📦 Dasar**
+**🧩 Pertemuan 6 · Nested `if`**
 
-Pertemuan [1](Pertemuan%20Pertama) · [2](Pertemuan%20Kedua) · [3](Pertemuan%20Ketiga) · [4](Pertemuan%20Keempat)
+Syarat ujian skripsi, absensi WiFi, akses lab, diskon toko buku.
 
-Cetak teks, variabel, tipe data, dan operator. Program latihan: luas segitiga, tabungan bank, total gaji, cicilan bulanan, biaya BBM, dan `QuizWeek4`.
-
-</td>
-<td width="33%" valign="top">
-
-**🔀 Seleksi**
-
-Pertemuan [5](Pertemuan%20Kelima) · [6](Pertemuan%20Keenam) · [7](Pertemuan%20Ke%20Tujuh)
-
-`if`, `if-else`, `switch`, nested `if`, dan operator logika. Program latihan: cetak KRS, validasi SKS, tarif parkir, absensi WiFi, akses lab, diskon toko buku. Ujian tengah semester: `CinemaGo` dan proyek Arduino buzzer.
-
-Laporan Pertemuan 6: [Indonesia](Pertemuan%20Keenam/Jobsheet6_report_attendance18_ID.md) · [Inggris](Pertemuan%20Keenam/Jobsheet6_report_attendance18_EN.md)
+[Folder](Pertemuan%20Keenam) · [Laporan Indonesia](Pertemuan%20Keenam/Jobsheet6_report_attendance18_ID.md) · [Laporan Inggris](Pertemuan%20Keenam/Jobsheet6_report_attendance18_EN.md)
 
 </td>
-<td width="33%" valign="top">
+<td width="50%" valign="top">
 
-**🔁 Perulangan**
+**🎬 Pertemuan 7 · Ujian tengah semester**
 
-Pertemuan [8](Pertemuan%20Kedelapan) · [9](Pertemuan%20Kesembilan)
+`CinemaGo` menghitung harga tiket bioskop. Proyek Arduino buzzer melengkapi ujian.
 
-`for`, `while`, `do-while`, dan nested loop. Program latihan: nilai SIAKAD, pesanan kafe, biaya parkir, pola bintang, persegi panjang, dan segitiga.
+[Folder](Pertemuan%20Ke%20Tujuh)
 
-Laporan: [Pertemuan 8](Pertemuan%20Kedelapan/Assigment%20Report/Report%20Jobsheet7%2018.md) · [Pertemuan 9](Pertemuan%20Kesembilan/Assigment%20Report/Jobsheet%208%20report.md)
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+**🔁 Pertemuan 8 · `for`, `while`, `do-while`**
+
+Nilai mahasiswa SIAKAD, pesanan kafe, tiket bioskop, biaya parkir.
+
+[Folder](Pertemuan%20Kedelapan) · [Laporan](Pertemuan%20Kedelapan/Assigment%20Report/Report%20Jobsheet7%2018.md)
+
+</td>
+<td width="50%" valign="top">
+
+**🪆 Pertemuan 9 · Nested loop**
+
+Bintang, persegi panjang, segitiga naik dan turun, nilai kelompok, 3 tugas.
+
+[Folder](Pertemuan%20Kesembilan) · [Laporan](Pertemuan%20Kesembilan/Assigment%20Report/Jobsheet%208%20report.md)
 
 </td>
 </tr>
 </table>
 
-## Mulai Cepat
+## Jalankan Sendiri
 
-Pasang JDK 21 atau lebih baru, lalu jalankan satu program:
+Pasang JDK 21 atau lebih baru, lalu cek instalasinya:
 
 ```bash
 java -version
-git clone https://github.com/nxbiel/Pembelajaran-Java-Semester-1.git
-cd Pembelajaran-Java-Semester-1/"Pertemuan Kesembilan/2.1 Experiment 1"
+javac -version
+```
+
+<details>
+<summary><b>Compile lalu jalankan</b></summary>
+
+```bash
+cd "Pertemuan Kesembilan/2.1 Experiment 1"
+javac Star18.java
+java Star18
+```
+
+</details>
+
+<details>
+<summary><b>Jalankan dari source</b></summary>
+
+JDK 11 ke atas menjalankan satu file `.java` tanpa langkah compile terpisah dan tanpa file `.class`:
+
+```bash
 java Star18.java
 ```
 
-JDK 11 ke atas menjalankan satu file `.java` tanpa langkah compile terpisah. Program yang meminta input memakai `Scanner`, jadi ketik jawabanmu di terminal setelah program mulai.
+</details>
 
-Di VS Code, pasang Extension Pack for Java, buka folder repo, lalu klik **Run** di atas method `main`.
+<details>
+<summary><b>Pakai VS Code</b></summary>
+
+Pasang Extension Pack for Java, buka folder repo, lalu klik **Run** di atas method `main`.
+
+</details>
+
+Program yang meminta input memakai `Scanner`, jadi ketik jawabanmu di terminal setelah program mulai.
 
 ## Aturan Penamaan
 
