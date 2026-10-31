@@ -135,7 +135,11 @@ Comparison: the first output is wide, the second is tall and narrow, and the thi
 
 4. Without `System.out.println();` the cursor never moves to a new line. All stars appear side by side on one line. For rows = 3 and columns = 6, the output is 18 stars in a row: `******************`.
 
-5. The change is in the `print` statement: replace `"*"` with `"#"`. Commit and push:
+5. The change is in the `print` statement: replace `"*"` with `"#"`. After the change, the output becomes a rectangle made of `#` characters, as shown below.
+
+   ![Rectangle18 output using #](../img/rectangle18#.png)
+
+   After that, commit and push the change to the repository:
 
    ```
    git add Rectangle18.java
