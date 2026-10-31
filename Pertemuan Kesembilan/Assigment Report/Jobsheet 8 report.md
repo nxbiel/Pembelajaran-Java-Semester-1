@@ -367,8 +367,6 @@ public class Task118 {
 
 The outer loop selects the row `i`. The inner loop prints the numbers 1 to `i` in that row. The counter `totalPrinted` goes up by 1 for every number printed. The `if (j < i)` check adds a space between numbers and leaves no trailing space. The total for n rows is 1 + 2 + ... + n = n(n+1)/2, which gives 15 for n = 5.
 
-![Task118 output](img/task118-output.png)
-
 ---
 
 ## 8. Assignment 2: Multiplication Table
