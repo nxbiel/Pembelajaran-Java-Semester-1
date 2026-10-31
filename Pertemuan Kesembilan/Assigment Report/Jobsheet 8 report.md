@@ -361,15 +361,7 @@ public class Task118 {
 
 ### Output (n = 5)
 
-```
-Enter the value of n = 5
-1
-1 2
-1 2 3
-1 2 3 4
-1 2 3 4 5
-Total numbers printed: 15
-```
+![Task118 output](../img/task118.png)
 
 ### Explanation
 
