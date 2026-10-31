@@ -407,20 +407,12 @@ public class Task218 {
 
 ### Output (n = 4)
 
-```
-Enter the value of n = 4
-   1   2   3   4
-   2   4   6   8
-   3   6   9  12
-   4   8  12  16
-Total of all numbers: 100
-```
+![Task218 output](../img/task218.png)
+
 
 ### Explanation
 
 Each cell holds `row * col`. The format `%4d` prints every number right-aligned in a width of 4 characters, so single-digit and double-digit numbers line up. The variable `total` adds every product. For n = 4 the sum is 100, which matches (n(n+1)/2)² = 10² = 100.
-
-![Task218 output](img/task218-output.png)
 
 ---
 
