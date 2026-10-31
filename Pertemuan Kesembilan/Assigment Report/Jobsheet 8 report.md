@@ -298,37 +298,11 @@ public class GroupScore18 {
 
 ### Output (3 groups, 2 graders, with the invalid score 105)
 
-```
-Enter the number of groups : 3
-Enter the number of graders: 2
-Group 1
-  Score from Grader 1: 80
-  Score from Grader 2: 90
-Group 1: average score = 85.0
-Group 2
-  Score from Grader 1: 75
-  Score from Grader 2: 105
-  Score must be 0-100. Retry!
-  Score from Grader 2: 85
-Group 2: average score = 80.0
-Group 3
-  Score from Grader 1: 90
-  Score from Grader 2: 96
-Group 3: average score = 93.0
-==============================
-Best group         : 3
-Highest average    : 93.0
-```
+![GroupScore18 output](../img/groupscore18.png)
 
 Invalid group count (groups = 0):
 
-```
-Enter the number of groups : 0
-Enter the number of graders: 2
-Groups and graders must be > 0.
-```
-
-![GroupScore18 output](img/groupscore18-output.png)
+![GroupScore18 Invalid output](../img/groupscore18_2.png)
 
 ### Answers
 
