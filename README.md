@@ -25,7 +25,7 @@
 
 ## Tentang
 
-Repo ini menyimpan kode Java dari kelas Dasar Pemrograman semester 1 di Politeknik Negeri Malang, dari `Hello World` sampai nested loop. Tiap pertemuan punya satu folder berisi jobsheet, percobaan, dan tugas. Pertemuan 6, 8, dan 9 menyertakan laporan dengan kode, hasil, dan analisis.
+Repo ini menyimpan kode Java dari kelas Dasar Pemrograman semester 1 di Politeknik Negeri Malang, dari `Hello World` sampai nested loop. Tiap pertemuan punya satu folder berisi jobsheet, percobaan, dan tugas. 
 
 | | |
 | --- | --- |
