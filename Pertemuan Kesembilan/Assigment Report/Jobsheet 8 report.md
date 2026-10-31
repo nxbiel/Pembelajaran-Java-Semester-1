@@ -18,15 +18,15 @@
 
 A nested loop is a loop placed inside the body of another loop. The outer loop runs once per round. For each round, the inner loop runs from start to finish.
 
-| Item | Rule |
-|------|------|
-| Total inner iterations | outer count × inner count |
-| Outer loop | Controls rows (the shelf) |
-| Inner loop | Controls columns (the locker on the shelf) |
-| `print` | Stays on the same line |
-| `println` | Moves to a new line. Place it after the inner loop, inside the outer loop |
-| Reset rule | A variable that must start fresh for each outer round (a row counter, a row total) is declared or reset inside the outer loop |
-| Persist rule | A variable that tracks a result across all rounds (a grand total, a best value) is declared before the outer loop |
+| Item                   | Rule                                                                                                                          |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| Total inner iterations | outer count × inner count                                                                                                     |
+| Outer loop             | Controls rows (the shelf)                                                                                                     |
+| Inner loop             | Controls columns (the locker on the shelf)                                                                                    |
+| `print`                | Stays on the same line                                                                                                        |
+| `println`              | Moves to a new line. Place it after the inner loop, inside the outer loop                                                     |
+| Reset rule             | A variable that must start fresh for each outer round (a row counter, a row total) is declared or reset inside the outer loop |
+| Persist rule           | A variable that tracks a result across all rounds (a grand total, a best value) is declared before the outer loop             |
 
 Loop choice in this jobsheet:
 
@@ -38,27 +38,11 @@ Loop choice in this jobsheet:
 
 ## 3. Experiment 1: Review of Loops 1
 
-**File:** `Star18.java`
+**File:** [Star18.java](../2.1%20Experiment%201/Star18.java)
 
 ### Code
 
-```java
-import java.util.Scanner;
-
-public class Star18 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the value of n = ");
-        int n = sc.nextInt();
-
-        for (int i = 1; i <= n; i++) {
-            System.out.print("*");
-        }
-        System.out.println();
-        sc.close();
-    }
-}
-```
+Program utama dapat dilihat di [Star18.java](../2.1%20Experiment%201/Star18.java).
 
 ### Output
 
@@ -88,38 +72,15 @@ public class Star18 {
 
 ## 4. Experiment 2: Rectangle Star Pattern (Nested FOR)
 
-**File:** `Rectangle18.java`
+**File:** [Rectangle18.java](../2.2%20Experiment%202/Rectangle18.java)
 
 ### Code
 
-The code below prints `#`, which is the modification asked for in Question 5. The original version uses `"*"` in the same place.
-
-```java
-import java.util.Scanner;
-
-public class Rectangle18 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the number of rows: ");
-        int rows = sc.nextInt();
-        System.out.print("Enter the number of columns: ");
-        int columns = sc.nextInt();
-
-        for (int i = 1; i <= rows; i++) {
-            for (int j = 1; j <= columns; j++) {
-                System.out.print("#");
-            }
-            System.out.println();
-        }
-        sc.close();
-    }
-}
-```
+Program utama dapat dilihat di [Rectangle18.java](../2.2%20Experiment%202/Rectangle18.java).
 
 ### Output
 
 ![Rectangle18 output](../img/rectangle18.png)
-
 
 Comparison: the first output is wide, the second is tall and narrow, and the third is a single line. The number of rows sets the height and the number of columns sets the width.
 
@@ -148,16 +109,16 @@ Comparison: the first output is wide, the second is tall and narrow, and the thi
 
 ## 5. Experiment 3: Debugging a Star Triangle (Nested WHILE)
 
-**File:** `Triangle18.java`
+**File:** [Triangle18.java](../2.3%20Experiment%203/Triangle18.java)
 
 ### Starter code result
 
 The starter code starts at `i = 0`, never calls `println`, and runs the outer loop for i = 0 to n.
 
-| n | Actual output | Target |
-|---|---------------|--------|
-| 3 | `******` (6 stars on one line) | 3 rows: `*`, `**`, `***` |
-| 5 | `***************` (15 stars on one line) | 5 rows: `*` to `*****` |
+| n   | Actual output                            | Target                   |
+| --- | ---------------------------------------- | ------------------------ |
+| 3   | `******` (6 stars on one line)           | 3 rows: `*`, `**`, `***` |
+| 5   | `***************` (15 stars on one line) | 5 rows: `*` to `*****`   |
 
 ### Debug output (n = 5)
 
@@ -178,42 +139,7 @@ The starter code starts at `i = 0`, never calls `println`, and runs the outer lo
 
 ### Final code (triangle and inverted triangle)
 
-```java
-import java.util.Scanner;
-
-public class Triangle18 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the value of n = ");
-        int n = sc.nextInt();
-
-        // Triangle: rows 1..n
-        int i = 1;
-        while (i <= n) {
-            int j = 0;
-            while (j < i) {
-                System.out.print("*");
-                j++;
-            }
-            System.out.println();
-            i++;
-        }
-
-        // Inverted triangle: rows n..1
-        i = n;
-        while (i >= 1) {
-            int j = 0;
-            while (j < i) {
-                System.out.print("*");
-                j++;
-            }
-            System.out.println();
-            i--;
-        }
-        sc.close();
-    }
-}
-```
+Program utama dapat dilihat di [Triangle18.java](../2.3%20Experiment%203/Triangle18.java).
 
 ### Output (n = 5)
 
@@ -237,64 +163,11 @@ public class Triangle18 {
 
 ## 6. Experiment 4: Case Study of Group Project Scores
 
-**File:** `GroupScore18.java`
+**File:** [GroupScore18.java](../2.4%20Experiment%204/GroupScore18.java)
 
 ### Code
 
-```java
-import java.util.Scanner;
-
-public class GroupScore18 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the number of groups : ");
-        int numGroups = sc.nextInt();
-        System.out.print("Enter the number of graders: ");
-        int numGraders = sc.nextInt();
-
-        if (numGroups <= 0 || numGraders <= 0) {
-            System.out.println("Groups and graders must be > 0.");
-        } else {
-            int groupNo = 1;
-            double highestAverage = -1;
-            int bestGroup = 0;
-
-            while (groupNo <= numGroups) {
-                System.out.println("Group " + groupNo);
-                double totalScore = 0;
-
-                for (int j = 1; j <= numGraders; j++) {
-                    int score;
-                    do {
-                        System.out.print("  Score from Grader " + j + ": ");
-                        score = sc.nextInt();
-                        if (score < 0 || score > 100) {
-                            System.out.println("  Score must be 0-100. Retry!");
-                        }
-                    } while (score < 0 || score > 100);
-                    totalScore += score;
-                }
-
-                double averageScore = totalScore / numGraders;
-                System.out.println("Group " + groupNo
-                        + ": average score = " + averageScore);
-
-                if (averageScore > highestAverage) {
-                    highestAverage = averageScore;
-                    bestGroup = groupNo;
-                }
-
-                groupNo++;
-            }
-
-            System.out.println("==============================");
-            System.out.println("Best group         : " + bestGroup);
-            System.out.println("Highest average    : " + highestAverage);
-        }
-        sc.close();
-    }
-}
-```
+Program utama dapat dilihat di [GroupScore18.java](../2.4%20Experiment%204/GroupScore18.java).
 
 ### Output (3 groups, 2 graders, with the invalid score 105)
 
@@ -323,41 +196,11 @@ Invalid group count (groups = 0):
 
 ## 7. Assignment 1: Nested Number Pattern
 
-**File:** `Task118.java`
+**File:** [Task118.java](../3.1%20Assigment%201/Task118.java)
 
 ### Code
 
-```java
-import java.util.Scanner;
-
-public class Task118 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the value of n = ");
-        int n = sc.nextInt();
-
-        if (n < 1) {
-            System.out.println("n must be at least 1.");
-        } else {
-            int totalPrinted = 0;
-
-            for (int i = 1; i <= n; i++) {
-                for (int j = 1; j <= i; j++) {
-                    System.out.print(j);
-                    if (j < i) {
-                        System.out.print(" ");
-                    }
-                    totalPrinted++;
-                }
-                System.out.println();
-            }
-
-            System.out.println("Total numbers printed: " + totalPrinted);
-        }
-        sc.close();
-    }
-}
-```
+Program utama dapat dilihat di [Task118.java](../3.1%20Assigment%201/Task118.java).
 
 ### Output (n = 5)
 
@@ -371,44 +214,15 @@ The outer loop selects the row `i`. The inner loop prints the numbers 1 to `i` i
 
 ## 8. Assignment 2: Multiplication Table
 
-**File:** `Task218.java`
+**File:** [Task218.java](../3.2%20Assigment%202/Task218.java)
 
 ### Code
 
-```java
-import java.util.Scanner;
-
-public class Task218 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the value of n = ");
-        int n = sc.nextInt();
-
-        if (n < 3) {
-            System.out.println("n must be at least 3.");
-        } else {
-            int total = 0;
-
-            for (int row = 1; row <= n; row++) {
-                for (int col = 1; col <= n; col++) {
-                    int result = row * col;
-                    System.out.printf("%4d", result);
-                    total += result;
-                }
-                System.out.println();
-            }
-
-            System.out.println("Total of all numbers: " + total);
-        }
-        sc.close();
-    }
-}
-```
+Program utama dapat dilihat di [Task218.java](../3.2%20Assigment%202/Task218.java).
 
 ### Output (n = 4)
 
 ![Task218 output](../img/task218.png)
-
 
 ### Explanation
 
@@ -418,75 +232,11 @@ Each cell holds `row * col`. The format `%4d` prints every number right-aligned 
 
 ## 9. Assignment 3: Sales Recap for Several Stores
 
-**File:** `Task318.java`
+**File:** [Task318.java](../3.3%20Assigment%203/Task318.java)
 
 ### Code
 
-```java
-import java.util.Scanner;
-
-public class Task318 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        int numStores;
-        do {
-            System.out.print("Enter the number of stores: ");
-            numStores = sc.nextInt();
-            if (numStores < 1) {
-                System.out.println("The number of stores must be at least 1. Retry!");
-            }
-        } while (numStores < 1);
-
-        int totalAllItems = 0;
-        int maxItems = -1;      // -1 so a store with 0 items can still be recorded
-        int bestStore = 0;
-        String summary = "";
-
-        for (int store = 1; store <= numStores; store++) {
-            System.out.println("Store " + store);
-
-            int numCustomers;
-            do {
-                System.out.print("  Number of customers: ");
-                numCustomers = sc.nextInt();
-                if (numCustomers < 0) {
-                    System.out.println("  Must not be negative. Retry!");
-                }
-            } while (numCustomers < 0);
-
-            int storeItems = 0;
-            for (int c = 1; c <= numCustomers; c++) {
-                int items;
-                do {
-                    System.out.print("    Items bought by customer " + c + ": ");
-                    items = sc.nextInt();
-                    if (items < 0) {
-                        System.out.println("    Must not be negative. Retry!");
-                    }
-                } while (items < 0);
-                storeItems += items;
-            }
-
-            summary += "Store " + store + " - customers: " + numCustomers
-                    + ", total items: " + storeItems + "\n";
-            totalAllItems += storeItems;
-
-            // strict ">" keeps the smallest store number when there is a tie
-            if (storeItems > maxItems) {
-                maxItems = storeItems;
-                bestStore = store;
-            }
-        }
-
-        System.out.println();
-        System.out.print(summary);
-        System.out.println("Total items across all stores: " + totalAllItems);
-        System.out.println("Store with the most items: " + bestStore);
-        sc.close();
-    }
-}
-```
+Program utama dapat dilihat di [Task318.java](../3.3%20Assigment%203/Task318.java).
 
 ### Output (example from the jobsheet)
 
@@ -494,11 +244,11 @@ public class Task318 {
 
 ### Edge case tests
 
-| Case | Input idea | Result |
-|------|-----------|--------|
-| Tie between stores | 2 stores, each with 1 customer buying 4 items | `Store with the most items: 1` (smallest number wins) |
-| Store with 0 customers | Store 1 has 0 customers | Prints `customers: 0, total items: 0`, and the program continues |
-| Negative value | `-3` for items | Prints a retry message and asks again |
+| Case                   | Input idea                                    | Result                                                           |
+| ---------------------- | --------------------------------------------- | ---------------------------------------------------------------- |
+| Tie between stores     | 2 stores, each with 1 customer buying 4 items | `Store with the most items: 1` (smallest number wins)            |
+| Store with 0 customers | Store 1 has 0 customers                       | Prints `customers: 0, total items: 0`, and the program continues |
+| Negative value         | `-3` for items                                | Prints a retry message and asks again                            |
 
 ### Explanation
 
