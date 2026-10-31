@@ -62,7 +62,7 @@ public class Star18 {
 
 ### Output
 
-![Star18 output](../img/star18.png3)
+![Star18 output](../img/star18.png)
 
 ### Answers
 
