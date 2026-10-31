@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:ED8B00,100:1F6FEB&height=200&section=header&text=Pembelajaran%20Java&fontColor=ffffff&fontSize=46&fontAlignY=38&desc=Semester%201%20%C2%B7%20Politeknik Negeri Malang%20&descAlignY=58" alt="Pembelajaran Java Semester 1" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:ED8B00,100:1F6FEB&height=200&section=header&text=Pembelajaran%20Java&fontColor=ffffff&fontSize=46&fontAlignY=38&desc=Semester%201%20%C2%B7%20PoliteknikNegeriMalang%20&descAlignY=58" alt="Pembelajaran Java Semester 1" />
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1200&color=ED8B00&center=true&vCenter=true&width=520&height=40&lines=Hello+World;Variabel+dan+operator;if+%2F+else+%2F+switch;for%2C+while%2C+do-while;Nested+loop" alt="Topik yang dipelajari" />
 
