@@ -1,0 +1,64 @@
+import java.util.Scanner;
+
+public class Quiz218 {
+    public static void main(String[] args) {
+        String nama = "Nabil";
+        int noAbsen = 18;
+        int k = noAbsen % 5;
+        System.out.println("Nama : " + nama);
+        System.out.println("Kode personal K = " + k);
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Jumlah tim   : ");
+        int jumlahTim = sc.nextInt();
+        System.out.print("Jumlah ronde : ");
+        int jumlahRonde = sc.nextInt();
+
+        int batasUnggulan = 20 + k;
+        double rataTertinggi = 0.0;
+        int timTerbaik = 0;
+        int jumlahUnggulan = 0;
+
+        // inner loop dijalankan 4 kali seperti contoh ilustrasi di soal (2 tim x 2 ronde)
+        for (int tim = 1; tim <= jumlahTim; tim++) {
+            System.out.println("Tim " + tim);
+            int total = 0;
+            int dimainkan = 0;
+
+            for (int ronde = 1; ronde <= jumlahRonde; ronde++) {
+                System.out.print("  Skor ronde " + ronde + ": ");
+                int skor = sc.nextInt();
+                if (skor != 0) {
+                    total = total + skor;
+                    dimainkan++;
+                }
+            }
+
+            double rata = 0;
+            if (dimainkan > 0) {
+                rata = (double) total / dimainkan;
+            }
+
+            String kategori;
+            if (dimainkan == 0) {
+                kategori = "Gugur";
+            } else if (rata >= batasUnggulan) {
+                kategori = "Unggulan";
+                jumlahUnggulan++;
+            } else {
+                kategori = "Reguler";
+            }
+
+            System.out.printf("  Main: %d | Rata: %.2f | %s%n", dimainkan, rata, kategori);
+
+            if (timTerbaik == 0 || rata > rataTertinggi) {
+                rataTertinggi = rata;
+                timTerbaik = tim;
+            }
+        }
+        System.out.println("==============================");
+        System.out.println("Tim terbaik         : " + timTerbaik);
+        System.out.printf("Rata-rata tertinggi : %.2f%n", rataTertinggi);
+        System.out.println("Jumlah tim Unggulan : " + jumlahUnggulan);
+    }
+}
