@@ -61,7 +61,7 @@ public class NumberArray18 {
 #### 2.1.2 Running Results / Output
 
 Output of the program:
-![OutputNumberArray](/img/outputnumberarray18.png)
+![OutputNumberArray](img/outputnumberarray18.png)
 
 #### 2.1.3 Answers to Questions
 
