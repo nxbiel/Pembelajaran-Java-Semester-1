@@ -61,20 +61,7 @@ public class NumberArray18 {
 #### 2.1.2 Running Results / Output
 
 Output of the program:
-
-```
-numbers[0] = 5
-numbers[1] = 13
-numbers[2] = -7
-numbers[3] = 17
-5
-13
--7
-17
-[5, 13, -7, 17]
-```
-
-The result matches the reference output in the jobsheet.
+![OutputNumberArray](/img/outputnumberarray18.png)
 
 #### 2.1.3 Answers to Questions
 
